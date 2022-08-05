@@ -1,8 +1,8 @@
 package com.login.domain;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -18,8 +18,8 @@ import lombok.Setter;
 @Entity(name="user_info")
 public class User {
 	@Id
+	@Column(name = "user_id")
 	String id;
-	String userId;
 	String passwd;
 	String userNm;
 	int failLoginCnt;

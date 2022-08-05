@@ -8,5 +8,4 @@ import com.login.domain.User;
 public interface UserRepository extends JpaRepository<User, String>, QuerydslPredicateExecutor<User>{
 
 	User findByIdAndPasswd(String userId, String passwd);
-	
 }

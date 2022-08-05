@@ -17,6 +17,5 @@ public class UserService {
 	public User getUserInfo(String userId, String passwd) {
 		
 		return userRepository.findByIdAndPasswd(userId, passwd);
-//		return null;
 	}
 }
