@@ -16,7 +16,7 @@ public class LoginController {
 	@Autowired
 	UserService userService;
 	
-	@GetMapping(path = "/login")
+	@GetMapping(path = "/api/login")
 	public User login(@RequestParam String userId, @RequestParam String passwd) {
 		
 		return userService.getUserInfo(userId, passwd);
